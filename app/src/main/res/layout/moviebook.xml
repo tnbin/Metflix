@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#99000000">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/textline"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/textline"
+            android:gravity="center"
+            android:text="영화 선택"
+            android:textSize="20dp" />
+
+        <ListView
+            android:id="@+id/lv_mv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/textline" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_seat"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+s
+            <TextView
+                android:id="@+id/seat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="30dp"
+                android:text="좌석"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_seat1"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/seat"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#ffffff"
+                android:onClick="btnClick"
+                android:padding="0dp"
+                android:text="1"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_seat2"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/seat"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/btn_seat1"
+                android:backgroundTint="#ffffff"
+                android:onClick="btnClick"
+                android:padding="0dp"
+                android:text="2"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_seat3"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/seat"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/btn_seat2"
+                android:backgroundTint="#ffffff"
+                android:onClick="btnClick"
+                android:padding="0dp"
+                android:text="3"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_seat4"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/seat"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/btn_seat3"
+                android:backgroundTint="#ffffff"
+                android:onClick="btnClick"
+                android:padding="0dp"
+                android:text="4"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_seat5"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/seat"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/btn_seat4"
+                android:backgroundTint="#ffffff"
+                android:onClick="btnClick"
+                android:padding="0dp"
+                android:text="5"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_seat6"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/btn_seat1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#ffffff"
+                android:onClick="btnClick"
+                android:padding="0dp"
+                android:text="6"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_seat7"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/btn_seat2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/btn_seat6"
+                android:backgroundTint="#ffffff"
+                android:onClick="btnClick"
+                android:padding="0dp"
+                android:text="7"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_seat8"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/btn_seat2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/btn_seat7"
+                android:backgroundTint="#ffffff"
+                android:onClick="btnClick"
+                android:padding="0dp"
+                android:text="8"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_seat9"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/btn_seat2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/btn_seat8"
+                android:backgroundTint="#ffffff"
+                android:onClick="btnClick"
+                android:padding="0dp"
+                android:text="9"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_seat10"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/btn_seat2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/btn_seat9"
+                android:backgroundTint="#ffffff"
+                android:onClick="btnClick"
+                android:padding="0dp"
+                android:text="10"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#99FF0000"
+                android:text="     예매하기    " />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#99FF0000"
+                android:text="좌석 선택 취소" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
